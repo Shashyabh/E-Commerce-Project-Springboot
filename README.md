@@ -47,111 +47,111 @@ For securing the application, I have used JWT authentication.
   admin.role.id=6789sokjhssyu89
   normal.role.id=iuhsy789sokjhsj
 ```
-    
 # API Reference
 
 ## User Module
-```http
+```
   POST /users/create : To create new Users
 ```  
-```http
+```
   Put /users/update/userId : To update existing user
 ``` 
-```http
+```
   Get /users/getUsers : To get all users
 ``` 
-```http
+```
   Get /users/userId :To get single user
 ``` 
-```http
+```
   Get /users/email :To get user by email
 ``` 
-```http
+```
   Get /users/search :To search with any keyword
 ``` 
-```http
+```
   Delete /users/delete/userId : To delete an user
 ``` 
-```http
+```
   POST /users/image : To upload an image
 ``` 
-```http
+```
   Get /users/image/userId : To serve an image
 ``` 
 
 
 ## Category Module
-```http
+```
   POST /Categories/create : To create a new Category (Only access by admin)
 ```
-```http
+```
   POST /CategoryId/product : To create product with CategoryId
 ```  
-```http
+```
   Put /Categories/CategoryId/product/productId :To update any product in Category
 ``` 
-```http
+```
   Get /Categories/CategoryId : Get all products by CategoryId
 ``` 
-```http
+```
   Delete /Categories/CategoryId : Delete a Category
 ``` 
-```http
-  POST /Categories/getAll : Get all Categories
+```
+  Get /Categories/getAll : Get all Categories
 ``` 
 
 ## Product Module
 
-```http
+```
   POST /products/create : To create new product
 ```  
-```http
+```
   Put /product/update/productId : To update existing produc
 ``` 
-```http
+```
   Get /products/getAll : To get all products
 ``` 
-```http
+```
   Get /products/getSingle/productId :To get single Product
 ``` 
-```http
+```
   Get /products/search/query :To search with any keyword
 ``` 
-```http
+```
   Delete /products/delete/userId : To delete an product
 ``` 
 ## Cart Module
 
-```http
+```
   POST /carts/addItem/userId : To add item into cart by userId
 ```  
-```http
+```
   Delete /carts/userId/items/itemId : To remove an item from cart
 ``` 
 
-```http
+```
   Delete /carts/clear/userId : To clear cart of an user
 ``` 
-```http
+```
   Get /carts/getAll/userId : To get all cart details of user
 ``` 
 
 ## Order Module
 
-```http
+```
   POST /orders/create : To place an order from cart
 ```  
-```http
+```
   Delete /orders/delete/orderId/ : To remove an order
 ``` 
-```http
+```
   Get /orders/users/userId : To get all order details of user
 ``` 
 
 ## Login Module
-```http
+```
   POST /auth/login : To login with email and password & generation of JWT
 ```  
+
 ## Request and Response from Json
 
 ### Login request from json
